@@ -1,0 +1,100 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* root */
+:root{
+    --darkBlue:#3c0f61;
+}
+
+/* body */
+body {
+    background-color: #d2d2d2;
+}
+/* container */
+#container {
+    margin: 5rem auto;
+    padding: 5rem 1rem 1rem;
+    max-width: 1140px;
+    position: relative;
+    color: var(--darkBlue);
+    background-color: #bc95ce;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* boxShadow for each cells of header section */
+.boxShadow {
+    -webkit-box-shadow: -3px -3px 63px 0px #a09c9c inset, -31px -31px 43px 0px #e2abe3 inset, 26px 26px 48px 0px #d095af inset;
+    -moz-box-shadow: -3px -3px 63px 0px #a09c9c inset, -31px -31px 43px 0px #e2abe3 inset, 26px 26px 48px 0px #d095af inset;
+    box-shadow: -3px -3px 63px 0px #a09c9c inset, -31px -31px 43px 0px #e2abe3 inset, 26px 26px 48px 0px #d095af inset;
+}
+
+/* flex_horizental for making table */
+.flex_horizental {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+/* header for header of table */
+.header {
+    height: 80px;
+    background-color: #c753a4 !important;
+    font-weight: 700;
+}
+
+/* boxHeader for each cell of header of table */
+.boxHeader {
+    width: 225px;
+    border: 1px solid var(--darkBlue);
+    height: 80px;
+    line-height: 80px;
+}
+
+/* responsive boxHeader */
+@media screen and (max-width:640px) {
+    .boxHeader{
+        line-height: 40px;
+    }
+}
+
+/* box for each cell */
+.box {
+    width: 225px;
+    padding: 1rem;
+    border: 1px solid var(--darkBlue);
+}
+
+
+/* position top for average total */
+.top {
+    position: absolute;
+    top: 1rem;
+}
+/* position right for sorted students */
+.right {
+    position: absolute;
+    right: 1rem;
+    background-color: inherit !important;
+}
+
+/* background color of odd divs */
+div:nth-child(odd) {
+    background-color: #f0b5e6;
+}
+/* background color of even divs */
+div:nth-child(even) {
+    background-color: #dba4d2;
+}
+
+.green{
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
